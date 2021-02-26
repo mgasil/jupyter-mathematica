@@ -15,7 +15,7 @@ in the wolframscript session to get your license key. Create an empty directory 
 
 ``` sh
 docker run -p 8888:8888 \
--v /home/$USER/jm-files/license:/usr/local/Wolfram/WolframEngine/12.1/Configuration/Licensing \
+-v /home/$USER/jm-files/license:/usr/local/Wolfram/WolframEngine/12.2/Configuration/Licensing \
 jupyter-mathematica
 ```
 
@@ -37,7 +37,7 @@ Full example mounting license file and work directory:
 
 ``` sh
 docker run -p 8888:8888 -v /home/$USER/jm-files/work:/home/jovyan/work \
--v /home/$USER/jm-files/license:/usr/local/Wolfram/WolframEngine/12.1/Configuration/Licensing \
+-v /home/$USER/jm-files/license:/usr/local/Wolfram/WolframEngine/12.2/Configuration/Licensing \
 jupyter-mathematica
 ```
 
